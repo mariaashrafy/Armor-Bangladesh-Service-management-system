@@ -1,7 +1,47 @@
-This project is a web-based Elevator Service Management System developed as a demo solution for a company called Sonic Elevator. The system is designed to digitize and streamline elevator service operations by replacing manual and fragmented processes with a centralized, role-based platform.
+# Web-Based Reconciliation and Service Management System for Armor Bangladesh Ltd.
 
-The application allows clients to securely submit service requests, track request status, view maintenance schedules, and access service history. Technicians can view assigned tasks, update service statuses, complete maintenance checklists, and submit detailed service reports. Management users are provided with dashboards and analytical tools to monitor performance metrics, service trends, technician efficiency, and modernization recommendations.
+## Project Overview
 
-Built using a service-oriented and modular approach, the system implements role-based access control, standardized request workflows, automated validation, and secure session handling. The platform improves transparency, accountability, and operational efficiency by centralizing all elevator-related service data in one system.
+The Web-Based Reconciliation and Service Management System is developed for Armor Bangladesh Ltd. to provide a centralized platform for managing service operations, maintenance activities, and reconciliation-related tasks.
 
-This project demonstrates how digital transformation can significantly enhance service quality, decision-making, and maintenance efficiency in elevator management firms like Sonic Elevator.
+The system is designed to reduce manual processes and improve the management of service requests, technician assignments, maintenance schedules, and operational information.
+
+## System Features
+
+The system provides role-based access for different types of users:
+
+- **Client:** Submit service requests, monitor request status, and view relevant service information.
+- **Technician:** View assigned service requests, provide technical updates, and update service progress.
+- **Manager:** Assign technicians, monitor service activities, manage request status, and oversee maintenance operations.
+- **Administrator:** Manage users, system information, and administrative functions.
+
+The system also supports preventive maintenance scheduling and centralized management of service-related records.
+
+## Technologies Used
+
+The system was developed using:
+
+- PHP
+- MySQL
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+## Project Objective
+
+The main objective of this project is to develop a centralized web-based platform that improves the efficiency of service and reconciliation management at Armor Bangladesh Ltd.
+
+The system helps organize service requests, technician assignments, progress monitoring, preventive maintenance, and reconciliation activities through a structured and role-based platform.
+
+## Academic Purpose
+
+This project was developed as part of an internship project for the Bachelor of Science in Computer Science and Engineering (CSE) program at Independent University, Bangladesh (IUB).
+
+## Organization
+
+**Armor Bangladesh Ltd.**
+
+## Project Title
+
+**Web-Based Reconciliation and Service Management System for Armor Bangladesh Ltd.**
