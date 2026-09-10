@@ -1,0 +1,513 @@
+/********** ARMOR BANGLADESH - TEMPLATE CSS **********/
+
+:root {
+    --primary: #F58220;       /* Armor Orange */
+    --primary-dark: #D96C0F;
+    --secondary: #202020;     /* Armor Charcoal */
+    --light: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --gray: #6B6B6B;
+    --dark: #202020;
+}
+
+
+/********** GENERAL BUTTONS **********/
+
+.btn {
+    font-weight: 700;
+    transition: all .35s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #FFFFFF;
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+
+/********** BACK TO TOP **********/
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+    z-index: 99;
+}
+
+
+/********** NAVBAR **********/
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-logo {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-light {
+    background: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 30px 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--secondary);
+    outline: none;
+    transition: .35s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (min-width: 992px) {
+
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        left: 50%;
+        background: var(--primary);
+        transition: .35s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .navbar-logo {
+        height: 58px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+
+/********** HERO SECTION **********/
+
+.hero-header {
+    position: relative;
+    min-height: 80vh;
+
+    /* Replace with your Armor banking/ATM image */
+    background:
+        url(../img/atm8.png)
+        center center / cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Professional dark overlay */
+.hero-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 20, 20, 0.88) 0%,
+            rgba(20, 20, 20, 0.68) 45%,
+            rgba(20, 20, 20, 0.30) 100%
+        );
+}
+
+/* Keep content above overlay */
+.hero-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/********** HERO TEXT **********/
+
+.hero-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+}
+
+.hero-title span,
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.hero-header p {
+    color: rgba(255, 255, 255, 0.90);
+}
+
+
+/********** HERO BUTTONS **********/
+
+.hero-header .btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+}
+
+.hero-header .btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #FFFFFF;
+}
+
+.btn-light:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+    border-color: var(--primary);
+}
+
+.btn-outline-light:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+}
+
+
+/********** SERVICE ITEMS **********/
+
+.service-item {
+    position: relative;
+    height: 350px;
+    padding: 0 30px;
+    transition: all .4s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-8px);
+}
+
+.service-item .service-icon {
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary);
+    border-radius: 50%;
+
+    transform: rotate(-10deg);
+
+    box-shadow: 0 10px 25px rgba(245, 130, 32, 0.25);
+}
+
+.service-item .service-icon i {
+    color: #FFFFFF;
+    transform: rotate(10deg);
+}
+
+.service-item a.btn {
+    position: absolute;
+    width: 60px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+}
+
+.service-item:hover a.btn {
+    bottom: -24px;
+    opacity: 1;
+}
+
+
+/********** PRICE / SOLUTION CAROUSEL **********/
+
+.price-carousel::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+
+    background: var(--primary);
+
+    border-radius: 8px 8px 50% 50%;
+    z-index: -1;
+}
+
+.price-carousel .owl-nav {
+    margin-top: 35px;
+    width: 100%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.price-carousel .owl-nav .owl-prev,
+.price-carousel .owl-nav .owl-next {
+    position: relative;
+    margin: 0 5px;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary);
+    background: #FFFFFF;
+
+    font-size: 22px;
+
+    border-radius: 45px;
+    transition: .35s;
+}
+
+.price-carousel .owl-nav .owl-prev:hover,
+.price-carousel .owl-nav .owl-next:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+}
+
+
+/********** TEAM **********/
+
+@media (min-width: 576px) {
+
+    .team-item .row {
+        height: 350px;
+    }
+}
+
+.team-carousel .owl-nav {
+    position: absolute;
+
+    padding: 0 45px;
+
+    width: 100%;
+    height: 45px;
+
+    top: calc(50% - 22.5px);
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-carousel .owl-nav .owl-prev,
+.team-carousel .owl-nav .owl-next {
+    position: relative;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    background: var(--primary);
+
+    border-radius: 45px;
+
+    font-size: 22px;
+
+    transition: .35s;
+}
+
+.team-carousel .owl-nav .owl-prev:hover,
+.team-carousel .owl-nav .owl-next:hover {
+    background: var(--secondary);
+}
+
+
+/********** TESTIMONIAL **********/
+
+.testimonial-carousel .owl-dots {
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+
+    margin: 0 5px;
+
+    width: 20px;
+    height: 20px;
+
+    background: var(--light);
+    border: 2px solid var(--primary);
+
+    border-radius: 20px;
+
+    transition: .35s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 40px;
+    height: 40px;
+
+    background: var(--primary);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+}
+
+
+/********** BLOG **********/
+
+.blog-card {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #FFFFFF;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: all .35s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.blog-content {
+    flex-grow: 1;
+}
+
+.blog-footer {
+    margin-top: auto;
+}
+
+
+/********** COMMON ARMOR STYLES **********/
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-dark {
+    background-color: var(--secondary) !important;
+}
+
+.text-dark {
+    color: var(--secondary) !important;
+}
+
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+
+/********** SELECTION COLOR **********/
+
+::selection {
+    background: var(--primary);
+    color: #FFFFFF;
+}
+
+
+/********** MOBILE HERO **********/
+
+@media (max-width: 767.98px) {
+
+    .hero-header {
+        min-height: 70vh;
+        background-position: center;
+    }
+
+    .hero-header::before {
+        background: rgba(20, 20, 20, 0.70);
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+}
